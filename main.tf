@@ -1,16 +1,16 @@
 provider "aws" {
- region = var.aws_region
+  region = var.aws_region
 }
 
 resorce "aws_instance" "example" {
- ami = var.ami_id
- instance_type = var.instance_type
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
-tags = {
+  tags = {
 
- Name = "Terraform-Github-Instance"
+    Name = "Terraform-Github-Instance"
 
-}
+  }
 }
 
 
